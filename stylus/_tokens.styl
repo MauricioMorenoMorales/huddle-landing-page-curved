@@ -10,5 +10,23 @@ FWBodyThin = 400
 FWNormal = 600
 FWBold = 700
 
+SpacingLong = 90px
+SpacingMedium = 50px
+SpacingSmall = 25px
+
 FFHeading = 'Poppins', sans-serif
 FFBody = 'Open Sans', sans-serif
+
+//Mixins
+
+BigButton()
+	padding 13px 35px
+	background-color Pink
+	color VeryPaleBlue
+	border-radius 50px
+	border none
+	font-weight FWBold
+	transition .3s
+	&:hover
+		background-color lighten(Pink, 10)
+		transform scale(.95)

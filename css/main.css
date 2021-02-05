@@ -11,6 +11,7 @@ html {
 }
 body {
   margin: 0;
+  font-family: 'Open Sans', sans-serif;
   overflow-x: hidden;
   font-size: 1.8rem;
 }
@@ -27,7 +28,10 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: FFheading;
+  font-family: 'Poppins', sans-serif;
+}
+p {
+  font-size: 1.4rem;
 }
 .header {
   display: flex;
@@ -44,4 +48,48 @@ h6 {
   border: 1px solid #ff52bf;
   color: #ff52bf;
   border-radius: 20px;
+  transition: 0.2s;
+  cursor: pointer;
+}
+.header__button:hover {
+  color: #ff85d2;
+  border: 1px solid #ff85d2;
+  transform: scale(0.95);
+}
+.hero {
+  margin-top: 90px;
+  padding: 0 5%;
+  text-align: center;
+}
+.hero__article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.hero__article h1 {
+  max-width: 270px;
+}
+.hero__article p {
+  max-width: 300px;
+}
+.hero__article__button {
+  margin: 50px auto;
+  padding: 13px 35px;
+  background-color: #ff52bf;
+  color: #f5faff;
+  border-radius: 50px;
+  border: none;
+  font-weight: 700;
+  transition: 0.3s;
+}
+.hero__article__button:hover {
+  background-color: #ff85d2;
+  transform: scale(0.95);
+}
+.hero__figure {
+  display: flex;
+  justify-content: center;
+}
+.hero__figure__image {
+  max-width: 340px;
 }
