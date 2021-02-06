@@ -64,10 +64,46 @@ p
 			margin SpacingMedium auto
 			BigButton()
 	&__figure
+		margin-top SpacingMedium
 		display flex
 		justify-content center
 		&__image
-			max-width 340px
+			max-width 270px
 
 .stats
-	
+	display flex
+	flex-direction column
+	align-items center
+	margin SpacingLong auto
+	&__item
+		width 150px
+		margin-top SpacingLong
+		&__figure
+			width 25px
+			margin-bottom 0
+		&__title
+			margin 0
+			font-size 5.5rem
+			font-family FFBody
+			color VeryDarkCyan
+		&__p
+			font-weight FWBodyThin
+			text-align center
+			color gray
+
+@media screen and (min-width 500px)
+	.hero
+		&__article
+			h1
+				max-width 500px
+			p
+				max-width 430px
+		&__figure
+			&__image
+				max-width 450px
+	.stats
+		flex-direction row
+		justify-content center
+		&__item
+			margin-left SpacingMedium
+			margin-right SpacingMedium
