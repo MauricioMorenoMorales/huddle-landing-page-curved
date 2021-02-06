@@ -29,6 +29,7 @@ h4,
 h5,
 h6 {
   font-family: 'Poppins', sans-serif;
+  color: #00252e;
 }
 p {
   font-size: 1.4rem;
@@ -37,14 +38,14 @@ p {
   display: flex;
   justify-content: space-between;
   padding: 0 5%;
-  margin-top: 25px;
+  margin-top: 80px;
 }
 .header__figure {
   width: 140px;
 }
 .header__button {
   padding: 7px 20px;
-  background-color: #f5faff;
+  background-color: #fff;
   border: 1px solid #ff52bf;
   color: #ff52bf;
   border-radius: 20px;
@@ -74,7 +75,7 @@ p {
 }
 .hero__article__button {
   margin: 50px auto;
-  padding: 13px 35px;
+  padding: 13px 45px;
   background-color: #ff52bf;
   color: #f5faff;
   border-radius: 50px;
@@ -85,6 +86,12 @@ p {
 .hero__article__button:hover {
   background-color: #ff85d2;
   transform: scale(0.95);
+}
+@media screen and (min-width: 1000px) {
+  .hero__article__button {
+    font-size: 2.3rem;
+    padding: 25px 65px;
+  }
 }
 .hero__figure {
   margin-top: 50px;
@@ -136,5 +143,44 @@ p {
   .stats__item {
     margin-left: 50px;
     margin-right: 50px;
+  }
+}
+@media screen and (min-width: 1000px) {
+  body {
+    font-size: 4rem;
+  }
+  p {
+    font-size: 2.5rem;
+  }
+  .header__button {
+    height: 40px;
+    width: 140px;
+  }
+  .header__figure {
+    width: 220px;
+  }
+  .hero__article h1 {
+    max-width: 1000px;
+    margin-bottom: 50px;
+  }
+  .hero__article p {
+    max-width: 800px;
+  }
+  .hero__figure__image {
+    max-width: 1000px;
+  }
+  .stats__item {
+    width: 300px;
+    margin-left: 150px;
+    margin-right: 150px;
+  }
+  .stats__item__figure {
+    width: 40px;
+  }
+  .stats__item__title {
+    font-size: 9rem;
+  }
+  .stats__item__p {
+    margin-left: -70px;
   }
 }

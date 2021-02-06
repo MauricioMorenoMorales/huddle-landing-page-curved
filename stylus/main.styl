@@ -24,6 +24,7 @@ figure
 
 h1,h2,h3,h4,h5,h6
 	font-family FFHeading
+	color VeryDarkCyan
 
 p
 	font-size 1.4rem
@@ -32,12 +33,12 @@ p
 	display flex
 	justify-content space-between
 	padding 0 5%
-	margin-top 25px
+	margin-top SpacingLong
 	&__figure
 		width 140px
 	&__button
 		padding 7px 20px
-		background-color VeryPaleBlue
+		background-color #fff
 		border 1px solid Pink
 		color Pink
 		border-radius 20px
@@ -107,3 +108,39 @@ p
 		&__item
 			margin-left SpacingMedium
 			margin-right SpacingMedium
+
+@media screen and (min-width 1000px)
+	body
+		font-size 4rem
+	p
+		font-size 2.5rem
+	.header
+		&__button
+			height 40px
+			width 140px
+		&__figure
+			width 220px
+
+	.hero
+		&__article
+			h1
+				max-width 1000px
+				margin-bottom SpacingMedium
+			p
+				max-width 800px
+			button
+		&__figure
+			&__image
+				max-width 1000px
+	
+	.stats
+		&__item
+			width 300px
+			margin-left 150px
+			margin-right 150px
+			&__figure
+				width 40px
+			&__title
+				font-size 9rem
+			&__p
+				margin-left -70px
