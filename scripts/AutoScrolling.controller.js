@@ -1,5 +1,5 @@
 function autoScroll() {
-	var div = document.querySelector('.stats')
+	var div = document.querySelector('.benefits')
 	div.style.display = ''
 	var top = div.offsetTop
 	if (window.scrollTop != top) window.scrollTo(0, top)

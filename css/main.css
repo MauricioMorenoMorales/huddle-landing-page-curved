@@ -34,6 +34,9 @@ h6 {
 p {
   font-size: 1.4rem;
 }
+picture img {
+  width: 100vw;
+}
 .header {
   display: flex;
   justify-content: space-between;
