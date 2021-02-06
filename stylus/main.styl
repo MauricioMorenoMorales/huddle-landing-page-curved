@@ -119,6 +119,17 @@ picture
 	&__item.reversed
 		background-color white
 
+.ready
+	display flex
+	flex-direction column
+	align-items center
+	text-align center
+	margin-bottom SpacingLong
+	&__title
+		max-width 300px
+	&__button
+		BigButton()
+
 @media screen and (min-width 500px)
 	.hero
 		&__article
@@ -140,8 +151,15 @@ picture
 		&__item
 			flex-direction row-reverse
 			justify-content center
+			&__text
+				text-align start
+				margin 0 SpacingMedium
 		&__item.reversed
-			flex-direction row
+				flex-direction row
+
+	.ready__title
+		max-width 1000px
+
 
 @media screen and (min-width 1000px)
 	body
@@ -159,7 +177,7 @@ picture
 		&__article
 			h1
 				max-width 1000px
-				margin-bottom SpacingMedium
+				margin-bottom 0
 			p
 				max-width 800px
 			button
@@ -185,5 +203,3 @@ picture
 				max-width 500px
 			&__text
 				max-width 700px
-				text-align start
-				margin 0 SpacingMedium
