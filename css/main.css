@@ -34,6 +34,11 @@ h6 {
 p {
   font-size: 1.4rem;
 }
+picture {
+  padding: 0;
+  margin: 0;
+  height: 100px;
+}
 picture img {
   width: 100vw;
 }
@@ -129,6 +134,30 @@ picture img {
   text-align: center;
   color: #808080;
 }
+.top-curve {
+  margin-bottom: -15px;
+}
+.benefits {
+  display: flex;
+  flex-direction: column;
+}
+.benefits__item {
+  padding: 25px 7%;
+  text-align: center;
+  background-color: #f5faff;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.benefits__item__figure {
+  max-width: 350px;
+}
+.benefits__item__text {
+  max-width: 350px;
+}
+.benefits__item.reversed {
+  background-color: #fff;
+}
 @media screen and (min-width: 500px) {
   .hero__article h1 {
     max-width: 500px;
@@ -146,6 +175,13 @@ picture img {
   .stats__item {
     margin-left: 50px;
     margin-right: 50px;
+  }
+  .benefits__item {
+    flex-direction: row-reverse;
+    justify-content: center;
+  }
+  .benefits__item.reversed {
+    flex-direction: row;
   }
 }
 @media screen and (min-width: 1000px) {
@@ -185,5 +221,13 @@ picture img {
   }
   .stats__item__p {
     margin-left: -70px;
+  }
+  .benefits__item__figure {
+    max-width: 500px;
+  }
+  .benefits__item__text {
+    max-width: 700px;
+    text-align: start;
+    margin: 0 50px;
   }
 }

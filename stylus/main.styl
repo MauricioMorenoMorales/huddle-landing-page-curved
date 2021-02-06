@@ -30,6 +30,9 @@ p
 	font-size 1.4rem
 
 picture
+	padding 0
+	margin 0
+	height 100px
 	img
 		width 100vw
 
@@ -96,6 +99,26 @@ picture
 			text-align center
 			color gray
 
+.top-curve
+	margin-bottom -15px
+.benefits
+	display flex
+	flex-direction column
+	&__item
+		padding SpacingSmall 7%
+		text-align center
+		background-color VeryPaleBlue
+		display flex
+		align-items center
+		flex-direction column
+		&__figure
+			max-width 350px
+		&__text
+			max-width 350px
+		
+	&__item.reversed
+		background-color white
+
 @media screen and (min-width 500px)
 	.hero
 		&__article
@@ -112,6 +135,13 @@ picture
 		&__item
 			margin-left SpacingMedium
 			margin-right SpacingMedium
+	
+	.benefits
+		&__item
+			flex-direction row-reverse
+			justify-content center
+		&__item.reversed
+			flex-direction row
 
 @media screen and (min-width 1000px)
 	body
@@ -148,3 +178,12 @@ picture
 				font-size 9rem
 			&__p
 				margin-left -70px
+
+	.benefits
+		&__item
+			&__figure
+				max-width 500px
+			&__text
+				max-width 700px
+				text-align start
+				margin 0 SpacingMedium
