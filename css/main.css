@@ -187,6 +187,19 @@ picture img {
     padding: 25px 65px;
   }
 }
+.footer-curve__picture img {
+  margin-bottom: -10px;
+}
+.footer {
+  background-color: #00252e;
+  color: #fff;
+  padding: 0 7%;
+}
+.footer__newsletter__title {
+  margin-top: 0;
+  padding-top: 50px;
+  color: #fff;
+}
 @media screen and (min-width: 500px) {
   .hero__article h1 {
     max-width: 500px;
