@@ -228,6 +228,10 @@ picture img {
   color: #fff;
   border-radius: 5px;
   border: none;
+  cursor: pointer;
+}
+.footer__newsletter__input__button:hover {
+  background-color: #ff85d2;
 }
 .footer__contact {
   margin-top: 80px;
@@ -349,6 +353,7 @@ picture img {
   }
   .footer__contact {
     max-width: 600px;
+    padding-right: 100px;
   }
   .footer__newsletter {
     width: 100%;
