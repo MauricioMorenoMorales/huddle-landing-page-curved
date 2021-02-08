@@ -29,6 +29,9 @@ h1,h2,h3,h4,h5,h6
 p
 	font-size 1.4rem
 
+a
+	color white
+
 picture
 	padding 0
 	margin 0
@@ -139,11 +142,52 @@ picture
 	color white
 	padding 0 7%
 	&__newsletter
+		max-width 307px
 		&__title
 			margin-top 0
 			padding-top SpacingMedium
 			color white
 		&__p
+			max-width 307px
+		&__input
+			display flex
+			flex-direction column
+			align-items flex-end
+			&__text
+				height 40px
+				border none
+				border-radius 5px
+				width 100%
+			&__button
+				margin-top 15px
+				width 50%
+				height 40px
+				background-color Pink
+				color white
+				border-radius 5px
+				border none
+	&__contact
+		margin-top SpacingLong
+		padding-bottom SpacingLong
+		max-width 307px
+		&__figure
+			width 65%
+		&__data
+			display flex
+			align-items center
+			margin SpacingSmall 0
+			p
+				margin 0
+			&__icon
+				width 24px
+				height 24px
+				margin-right SpacingSmall
+		&__social__svg
+			margin-right 10px
+			cursor pointer
+
+.hover-svg:hover .hover-svg-path
+	fill #09c7fd
 
 @media screen and (min-width 500px)
 	.hero
@@ -174,13 +218,19 @@ picture
 
 	.ready__title
 		max-width 1000px
-
+@media screen and (min-width 700px)
+	.footer
+		display flex
+		flex-direction row-reverse
+		justify-content space-between
+		&__contact
+			margin-top 50px
 
 @media screen and (min-width 1000px)
 	body
 		font-size 4rem
 	p
-		font-size 2.5rem
+		font-size 2.0rem
 	.header
 		&__button
 			height 40px
@@ -218,3 +268,19 @@ picture
 				max-width 500px
 			&__text
 				max-width 700px
+
+	.footer-curve__picture
+		img
+			margin-bottom -15px
+	.footer
+		&__contact
+			max-width 600px
+		&__newsletter
+			width 100%
+			max-width 600px
+			&__p
+				max-width 600px
+			&__input
+				flex-direction row
+				&__text
+					margin-right SpacingSmall
