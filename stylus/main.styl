@@ -5,33 +5,25 @@ html
 	font-family FFBody
 	font-size 62.5%
 	scroll-behavior smooth
-
 *,*:before,*:after
 	box-sizing inherit
-
 body
 	margin 0
 	font-family FFBody
 	overflow-x hidden
 	font-size 1.8rem
-
 img
 	max-width 100%
 	height auto
-
 figure
 	margin 0
-
 h1,h2,h3,h4,h5,h6
 	font-family FFHeading
 	color VeryDarkCyan
-
 p
 	font-size 1.4rem
-
 a
 	color white
-
 picture
 	padding 0
 	margin 0
@@ -58,7 +50,6 @@ picture
 			color lighten(Pink, 10)
 			border 1px solid lighten(Pink, 10)
 			transform scale(.95)
-
 .hero
 	margin-top SpacingLong
 	padding 0 5%
@@ -80,7 +71,6 @@ picture
 		justify-content center
 		&__image
 			max-width 270px
-
 .stats
 	display flex
 	flex-direction column
@@ -101,7 +91,6 @@ picture
 			font-weight FWBodyThin
 			text-align center
 			color gray
-
 .top-curve
 	margin-bottom -15px
 .benefits
@@ -118,10 +107,8 @@ picture
 			max-width 350px
 		&__text
 			max-width 350px
-		
 	&__item.reversed
 		background-color white
-
 .ready
 	display flex
 	flex-direction column
@@ -132,11 +119,9 @@ picture
 		max-width 300px
 	&__button
 		BigButton()
-
 .footer-curve__picture
 	img
 		margin-bottom -10px
-
 .footer
 	background-color VeryDarkCyan
 	color white
@@ -197,117 +182,12 @@ picture
 	display none
 	&.active
 		display block
-
 .input-text-container
 	width 307px
-
 .hover-svg:hover .hover-svg-path
 	fill #09c7fd
 
-@media screen and (min-width 500px)
-	.hero
-		&__article
-			h1
-				max-width 500px
-			p
-				max-width 430px
-		&__figure
-			&__image
-				max-width 450px
-	.stats
-		flex-direction row
-		justify-content center
-		&__item
-			margin-left SpacingMedium
-			margin-right SpacingMedium
-
-	.benefits
-		&__item
-			flex-direction row-reverse
-			justify-content center
-			&__text
-				text-align start
-				margin 0 SpacingMedium
-		&__item.reversed
-				flex-direction row
-
-	.ready__title
-		max-width 1000px
-@media screen and (min-width 700px)
-	.footer
-		display flex
-		flex-direction row-reverse
-		justify-content space-between
-		&__contact
-			margin-top 50px
-
-@media screen and (min-width 1000px)
-	body
-		font-size 4rem
-	p
-		font-size 2.0rem
-	.header
-		&__button
-			height 40px
-			width 140px
-		&__figure
-			width 220px
-
-	.hero
-		&__article
-			h1
-				max-width 1000px
-				margin-bottom 0
-			p
-				max-width 800px
-			button
-		&__figure
-			&__image
-				max-width 1000px
-	
-	.stats
-		&__item
-			width 300px
-			margin-left 150px
-			margin-right 150px
-			&__figure
-				width 40px
-			&__title
-				font-size 9rem
-			&__p
-				margin-left -70px
-
-	.benefits
-		&__item
-			&__figure
-				max-width 500px
-			&__text
-				max-width 700px
-
-	.footer-curve__picture
-		img
-			margin-bottom -15px
-	.footer
-		&__contact
-			max-width 600px
-			padding-right 100px
-		&__newsletter
-			width 100%
-			max-width 600px
-			&__p
-				max-width 600px
-			&__input
-				flex-direction row
-				align-items start
-				&__text
-					margin-right 100px
-					width 90%
-					margin-top -50px
-				&__button
-					margin-top 20px
-					max-width 150px
-
-	.input-text-container
-		width 70%
-	.warn-message
-		font-size 1.1rem
+@media screen and (max-width 340px)
+	.footer__newsletter__input__text
+		width 95%
+		margin-left 5%

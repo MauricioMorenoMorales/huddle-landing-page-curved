@@ -1,0 +1,43 @@
+@media screen and (min-width: 500px) {
+  .hero__article h1 {
+    max-width: 500px;
+  }
+  .hero__article p {
+    max-width: 430px;
+  }
+  .hero__figure__image {
+    max-width: 450px;
+  }
+  .stats {
+    flex-direction: row;
+    justify-content: center;
+  }
+  .stats__item {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+  .benefits__item {
+    flex-direction: row-reverse;
+    justify-content: center;
+  }
+  .benefits__item__text {
+    text-align: start;
+    margin: 0 50px;
+  }
+  .benefits__item.reversed {
+    flex-direction: row;
+  }
+  .ready__title {
+    max-width: 1000px;
+  }
+}
+@media screen and (min-width: 700px) {
+  .footer {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+  .footer__contact {
+    margin-top: 50px;
+  }
+}

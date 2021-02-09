@@ -1,0 +1,36 @@
+@import './_tokens.styl'
+
+@media screen and (min-width 500px)
+	.hero
+		&__article
+			h1
+				max-width 500px
+			p
+				max-width 430px
+		&__figure
+			&__image
+				max-width 450px
+	.stats
+		flex-direction row
+		justify-content center
+		&__item
+			margin-left SpacingMedium
+			margin-right SpacingMedium
+	.benefits
+		&__item
+			flex-direction row-reverse
+			justify-content center
+			&__text
+				text-align start
+				margin 0 SpacingMedium
+		&__item.reversed
+				flex-direction row
+	.ready__title
+		max-width 1000px
+@media screen and (min-width 700px)
+	.footer
+		display flex
+		flex-direction row-reverse
+		justify-content space-between
+		&__contact
+			margin-top 50px
