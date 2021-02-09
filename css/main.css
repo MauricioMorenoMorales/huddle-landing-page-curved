@@ -222,6 +222,9 @@ picture img {
   border-radius: 5px;
   width: 100%;
 }
+.footer__newsletter__input__text.active {
+  border: 2px solid #f00;
+}
 .footer__newsletter__input__button {
   margin-top: 15px;
   width: 50%;
